@@ -28,6 +28,8 @@ gem "font-awesome-sass", "~> 6.1"
 
 gem "simple_form"
 
+gem "faker"
+
 gem "sassc-rails"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]

@@ -1,0 +1,10 @@
+<div>
+  <h1>Vos listes</h1>
+  <div><%= link_to "Create a new list", new_list_path %></div>
+  <div>
+    <% @lists.each do |list| %>
+      <div><%= link_to list.name, list_path(list) %></div>
+      <% end %>
+  </div>
+  <div class="btn btn-primary"><%= link_to "Acceder aux bookmarks", bookmarks_path %></div>
+</div>
