@@ -1,6 +1,9 @@
 <div>
   <h1>Votre liste</h1>
   <div><%= @list.name %></div>
+  <% @bookmarks.each do |bookmark| %>
+    <div><%= bookmark.movie.title %></div>
+    <% end %>
   <div><%= link_to "Voir les bookmarks", list_bookmark_path(@list) %></div>
   <div><%= link_to "Retour", lists_path %></div>
   <div><%= link_to "Creer un nouveau bookmark", new_list_bookmark_path(@list), class: 'btn btn-primary' %></div>

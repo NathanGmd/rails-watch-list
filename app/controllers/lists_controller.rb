@@ -19,7 +19,10 @@ class ListsController < ApplicationController
 
   def edit; end
 
-  def show; end
+  def show
+    @movies = Movie.all
+    @bookmarks = Bookmark.where(list: @list)
+  end
 
   def update; end
 
